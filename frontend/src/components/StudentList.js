@@ -1,13 +1,14 @@
 // StudentList React Component - Display Students with Search
-// Tech Stack: React 18.2 with Hooks
+// Tech Stack: React 18.2 with Hooks & memo for Performance
 // DSAI Summer Internship 2026
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, memo } from 'react';
 
-const StudentList = ({ students, onEdit, onDelete, loading, cacheSource }) => {
+const StudentList = memo(({ students, onEdit, onDelete, loading, cacheSource }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredStudents, setFilteredStudents] = useState([]);
 
+  // React useEffect - filter students when search query or students change
   useEffect(() => {
     if (searchQuery.trim() === '') {
       setFilteredStudents(students);
@@ -25,9 +26,10 @@ const StudentList = ({ students, onEdit, onDelete, loading, cacheSource }) => {
     }
   }, [searchQuery, students]);
 
-  const handleSearch = (e) => {
+  // Optimized search handler with useCallback
+  const handleSearch = useCallback((e) => {
     setSearchQuery(e.target.value);
-  };
+  }, []);
 
   if (loading) {
     return (
@@ -114,4 +116,5 @@ const StudentList = ({ students, onEdit, onDelete, loading, cacheSource }) => {
   );
 };
 
+// React.memo prevents unnecessary re-renders
 export default StudentList;
