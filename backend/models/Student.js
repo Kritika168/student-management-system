@@ -1,3 +1,7 @@
+// Student Schema for MongoDB Atlas
+// Tech Stack: Mongoose + MongoDB Atlas (Cloud Database)
+// DSAI Summer Internship 2026
+
 const mongoose = require('mongoose');
 
 const studentSchema = new mongoose.Schema(

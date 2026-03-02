@@ -1,3 +1,7 @@
+// Student Controller - Business Logic with Redis Caching
+// Tech Stack: Express.js + MongoDB Atlas + Redis Caching
+// DSAI Summer Internship 2026
+
 const Student = require('../models/Student');
 const { getRedisClient } = require('../config/redis');
 

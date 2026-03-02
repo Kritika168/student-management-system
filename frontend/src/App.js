@@ -1,3 +1,7 @@
+// Student Database Management System - React Frontend
+// Tech Stack: React 18.2
+// DSAI Summer Internship 2026
+
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import StudentForm from './components/StudentForm';

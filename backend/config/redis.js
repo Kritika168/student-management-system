@@ -1,3 +1,7 @@
+// Redis Cloud Caching Configuration  
+// Tech Stack: Redis (Caching Layer)
+// DSAI Summer Internship 2026
+
 const redis = require('redis');
 
 let redisClient;

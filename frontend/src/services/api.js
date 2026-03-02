@@ -1,3 +1,7 @@
+// API Service Layer - Axios HTTP Client
+// Tech Stack: Axios for API communication (no page reloads)
+// DSAI Summer Internship 2026
+
 import axios from 'axios';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';

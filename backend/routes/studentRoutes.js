@@ -1,3 +1,7 @@
+// Student Routes - Express.js REST API Endpoints
+// Tech Stack: Express.js Router
+// DSAI Summer Internship 2026
+
 const express = require('express');
 const router = express.Router();
 const {

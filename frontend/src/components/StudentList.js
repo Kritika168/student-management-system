@@ -1,3 +1,7 @@
+// StudentList React Component - Display Students with Search
+// Tech Stack: React 18.2 with Hooks
+// DSAI Summer Internship 2026
+
 import React, { useState, useEffect } from 'react';
 
 const StudentList = ({ students, onEdit, onDelete, loading, cacheSource }) => {

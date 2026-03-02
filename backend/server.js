@@ -1,3 +1,7 @@
+// Student Database Management System - Node.js + Express Server
+// Tech Stack: Node.js, Express, MongoDB Atlas, Redis
+// DSAI Summer Internship 2026
+
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');

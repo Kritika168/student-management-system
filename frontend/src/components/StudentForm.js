@@ -1,3 +1,7 @@
+// StudentForm React Component - Add/Edit Student Form
+// Tech Stack: React 18.2 with Hooks
+// DSAI Summer Internship 2026
+
 import React, { useState, useEffect } from 'react';
 
 const StudentForm = ({ onStudentAdded, editingStudent, onCancelEdit }) => {
